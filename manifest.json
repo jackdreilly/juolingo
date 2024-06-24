@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Div Monitor Extension",
+  "version": "1.0",
+  "description": "Monitors for a certain div being added and adds keystroke listeners to child divs.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.duolingo.com/*"], 
+      "js": ["content.js"],
+      "css": [ "style.css" ]
+    }
+  ]
+}

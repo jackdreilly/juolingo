@@ -1,0 +1,3 @@
+.matches-selected:before {
+    border-color: green !important;
+}
